@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Pontos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Contador de pontos</h1>
+        <div id="div1">
+            <div class="form-group">
+                <label for="jogador1-el">Coloque o nome do Jogador 1</label>
+                <input type="text" class="form-control" id="jogador1-el">
+            </div>
+            <div class="form-group">
+                <label for="jogador2-el">Coloque o nome do Jogador 2</label>
+                <input type="text" class="form-control" id="jogador2-el">
+            </div>
+            <button class="btn btn-primary" onclick="iniciar()">Iniciar</button>
+
+            <table class="table table-bordered mt-3" id="tabela-el">
+                <thead>
+                    <tr>
+                        <th id="nomeJogador1-el">Jogador 1</th>
+                        <th id="nomeJogador2-el">Jogador 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="batidaJogador1"> Batida</td>
+                        <td><input type="checkbox" id="batidaJogador2"> Batida</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="mortoJogador1"> Morto</td>
+                        <td><input type="checkbox" id="mortoJogador2"> Morto</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="3vermelhosJogador1" placeholder="3 Vermelhos"></td>
+                        <td><input type="text" class="form-control" id="3vermelhosJogador2" placeholder="3 Vermelhos"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="3pretosJogador1" placeholder="3 Pretos"></td>
+                        <td><input type="text" class="form-control" id="3pretosJogador2" placeholder="3 Pretos"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="canastrasLimpasJogador1" placeholder="Canastras Limpas"></td>
+                        <td><input type="text" class="form-control" id="canastrasLimpasJogador2" placeholder="Canastras Limpas"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="canastrasSujasJogador1" placeholder="Canastras Sujas"></td>
+                        <td><input type="text" class="form-control" id="canastrasSujasJogador2" placeholder="Canastras Sujas"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" id="cartasRestantesJogador1" placeholder="Cartas Restantes"></td>
+                        <td><input type="text" class="form-control" id="cartasRestantesJogador2" placeholder="Cartas Restantes"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="resultadoRodadaJogador1">Resultado: </td>
+                        <td id="resultadoRodadaJogador2">Resultado:</td>
+                    </tr>
+                    <tr>
+                        <td id="resultadoTotalJogador1">Resultado Total</td>
+                        <td id="resultadoTotalJogador2">Resultado Total</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button class="btn btn-primary" onclick="calcular()">Calcular</button>
+            <button class="btn btn-primary" onclick="continuar()">Continuar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
